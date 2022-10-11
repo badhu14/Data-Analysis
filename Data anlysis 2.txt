@@ -1,0 +1,8 @@
+police = pd.read_csv("police.csv")
+
+cols = ['driver_age_raw', 'driver_age']
+police[cols].mean()
+
+police[cols].std()
+
+police[cols].max()

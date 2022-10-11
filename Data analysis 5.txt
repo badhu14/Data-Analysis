@@ -1,0 +1,20 @@
+police = pd.read_csv("police.csv")
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8, 6))
+male = police[police["driver_gender"] == "M"]
+plt.title("Age of male caught by the police.")
+plt.xlabel("age")
+plt.ylabel("Times caught")
+plt.hist(male["driver_age"])
+plt.show()
+
+
+police["violation_raw"].value_counts()
+
+
+police["violation_raw"].value_counts().plot(kind="bar")
+
+police.hist('driver_age', by='violation', sharex=True, sharey=True)
+plt.show()

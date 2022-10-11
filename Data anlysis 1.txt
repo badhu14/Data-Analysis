@@ -1,0 +1,8 @@
+police = pd.read_csv("police.csv")
+
+
+
+police.head(5)
+
+
+police.tail(5)

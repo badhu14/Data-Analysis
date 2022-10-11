@@ -1,0 +1,3 @@
+police = pd.read_csv("police.csv")
+
+police.dtypes

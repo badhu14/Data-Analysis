@@ -1,0 +1,24 @@
+police = pd.read_csv("police.csv")
+
+len(police)
+
+data_missing = police.isna()
+data_missing
+
+data_num_missing = data_missing.sum()
+data_num_missing
+
+data_num_missing / len(police)
+
+
+data_num_missing / len(police) * 100
+
+police.isna().mean().round(4) * 100
+
+police.count()
+
+len(police) - police.count()
+
+police.count() / len(police)
+
+(1 - police.count() / len(police)) * 100
